@@ -1,4 +1,8 @@
 import { useContext } from 'react';
+import { FaArrowCircleUp } from 'react-icons/fa';
+
+import Head from 'next/head';
+import Link from 'next/link';
 
 import { NavBar } from "../components/NavBar";
 import { Menu } from "../components/Menu";
@@ -9,13 +13,15 @@ import 'animate.css';
 
 
 export default function About() {
-  const { openMenu } = useContext(GlobalContext);
-
-  
+  const { openMenu } = useContext(GlobalContext);  
 
   return (
 
     <>
+    <Head>
+      <title> CsCode | Sobre</title>
+    </Head>
+
     <NavBar />
     { openMenu && <Menu /> }
 
@@ -26,9 +32,7 @@ export default function About() {
             <p>QUEM SOMOS NÓS</p>
           </div>
         </div>
-
         
-
         <div className={styles.aboutSubtitle}>
           
           <div className="animate__animated animate__slowe animate__fadeInUpBig ">
@@ -45,6 +49,42 @@ export default function About() {
           </div>
 
         </div>
+
+        <div className={styles.technology}>
+          <div className="">
+            <p>Tecnologia</p>
+          </div>
+
+          <div className={styles.technologyGrid}>
+            <div className={styles.technologyGridItem}>
+              <img src="image/nodejs.png" atl="NodeJS"/>
+            </div>
+
+            <div className={styles.technologyGridItem}>
+              <img src="image/react.png" atl="ReactJS"/>
+            </div>
+
+            <div className={styles.technologyGridItem}>
+              <img src="image/react-native.png" atl="React Native"/>
+            </div>
+
+            <div className={styles.technologyGridItem}>
+              <img src="image/next.png" atl="NextJS"/>
+            </div>            
+          </div>          
+        </div>
+
+        <section className={styles.informative}>
+          <p>Vamos trabalhar juntos para construir algo ótimo.</p>
+        </section>
+
+        <footer>
+          <p>© 2021 CsCode. All Right Reserved.</p>
+          <div>
+            <p>Volte para inicio</p>
+            <Link href="#"><FaArrowCircleUp /></Link>
+          </div>
+        </footer>
       </div>
     </div>
 
