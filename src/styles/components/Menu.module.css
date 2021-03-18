@@ -40,9 +40,6 @@
   display: block;
   height: 100%;
   width: 100%;
-
-  animation: move;
-  animation-duration: 0.8s;
 }
 
 .contentWrapper .primaryNav .primaryHeight {
@@ -56,16 +53,18 @@
   list-style: none;
 }
 
-.contentWrapper .primaryNav .primaryHeight ul li {
+.contentWrapper .primaryNav .primaryHeight ul li button {
   cursor: pointer;
   margin: 10px 0;
   font-size: 75px;
   font-weight: bold;
   color: #BABABA;
   transition: color 0.2s;
+  background: none;
+  border: none;
 }
 
-.contentWrapper .primaryNav .primaryHeight ul li:hover {
+.contentWrapper .primaryNav .primaryHeight ul li button:hover {
   color: #FFF;
 }
 
@@ -75,9 +74,6 @@
   align-self: center;
   position: relative;
   z-index: 202;
-
-  animation: move;
-  animation-duration: 0.9s;
 }
 
 .companyInfo .info {
@@ -210,9 +206,10 @@
 
   .container .contentWrapper {
     flex-direction: column;
+    margin-top: 50px;
   }
 
-  .contentWrapper .primaryNav .primaryHeight ul li {
+  .contentWrapper .primaryNav .primaryHeight ul li button {
     font-size: 50px;
   }
 

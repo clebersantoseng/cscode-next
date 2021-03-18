@@ -1,10 +1,11 @@
 .container {
   width: 100vw; 
   display: block;
+  position: sticky;
+  top: 35px;
 }
 
 .container .content {
-  position: relative;
   top: 35px;
   right: 0px;
   left: 0px;
@@ -14,7 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;  
-  z-index: 201;
+  z-index: 1000;
 }
 
 @media (max-width: 380px) {

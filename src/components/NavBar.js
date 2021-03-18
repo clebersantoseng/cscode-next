@@ -6,22 +6,16 @@ import { GlobalContext } from '../contexts/GlobalContext';
 import styles from '../styles/components/NavBar.module.css';
 
 export function NavBar() {
-  const { openMenu, setOpenMenu } = useContext(GlobalContext);
+  const { openMenu, setOpenMenu, handleMenu } = useContext(GlobalContext);
     
-  function handleModal() {
-    if(openMenu) {      
-      setOpenMenu(false);      
-    } else {      
-      setOpenMenu(true);      
-    }
-  }
+  
 
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <img src="image/logo-white.png" alt="CsCode" /> 
         
-        <button type="button" onClick={handleModal}>
+        <button type="button" onClick={handleMenu}>
             <FaBars fontSize="30"/>
            <p>MENU</p> 
         </button>
