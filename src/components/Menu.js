@@ -50,8 +50,8 @@ export function Menu() {
 
       <div className={styles.footer}>
         <div>
-        <img src="favicon.ico" alt="logo" />
-        <p>© 2021 CS Code. Todos os direitos reservados.</p>
+          <img src="image/logo-color.png" alt="logo" />
+          <p>© 2021 CsCode. Todos os direitos reservados.</p>
         </div>
       </div>
     </div>

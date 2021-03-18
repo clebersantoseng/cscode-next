@@ -19,7 +19,7 @@ export function NavBar() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <img src="image/cscode-white.png" alt="CsCode" /> 
+        <img src="image/logo-white.png" alt="CsCode" /> 
         
         <button type="button" onClick={handleModal}>
             <FaBars fontSize="30"/>
