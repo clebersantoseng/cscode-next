@@ -1,0 +1,98 @@
+.container {
+  height: 100%;  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  width: 100vw;
+  padding: 5px; 
+
+  bottom: 0;
+  position: absolute;
+  z-index: 99;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  background: none;
+}
+
+.slider svg {
+  font-size: 12px;
+  color: #FFF;
+  cursor: pointer;
+  margin: 5px 10px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.slider svg:hover {
+  font-size: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.scrollContainer {
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scrollPage {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.scrollPage p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 300px;
+  
+  color: #FFF;
+  font-weight: bold;
+  font-size: 35px;
+  width: 100vw;
+  
+}
+
+
+
+.page1 {
+  /* background: url('../../../public/teste/iphone.jpg') right top no-repeat; */
+  background-size: cover;
+
+  /* width: 100vw;
+  height: 100vh;
+  resize: none;  */
+}
+
+.page2 {
+  /* background: url('../../../public/teste/ipad.jpg') right top no-repeat; */
+  background-size: cover;
+
+   /* width: 100vw;
+  height: 100vh;
+  resize: none;  */
+}
+
+.page3 {
+  /* background: url('../../../public/teste/imac.png') no-repeat; */
+  background-size: cover;
+  background-position: center right;
+
+ /* width: 100vw;
+  height: 100vh;
+  resize: none;  */
+}
+

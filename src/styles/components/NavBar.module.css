@@ -1,0 +1,52 @@
+.container {
+  width: 100vw; 
+  display: block;
+}
+
+.container .content {
+  position: relative;
+  top: 35px;
+  right: 0px;
+  left: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  z-index: 201;
+}
+
+@media (max-width: 600px) {
+  .container .content {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.container .content img {
+  height: 50px;
+}
+
+.container .content img:hover {
+ cursor: pointer;
+}
+
+.container .content  button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.container .content button svg {
+  color: #FFF;
+  margin-right: 10px;
+}
+
+.container .content button p {
+  color: #FFF;
+  margin-left: 8px;
+}
