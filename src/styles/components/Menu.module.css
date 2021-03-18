@@ -239,13 +239,18 @@
 
 /* MAX-WIDTH 350PX */
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
+  .contentWrapper .primaryNav .primaryHeight ul{
+    margin-top: 35px;
+  }
+
   .contentWrapper .primaryNav .primaryHeight ul li {
     font-size: 35px;
   }
 
+
   .contentWrapper .companyInfo {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .footer {

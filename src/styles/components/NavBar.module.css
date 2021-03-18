@@ -17,6 +17,12 @@
   z-index: 201;
 }
 
+@media (max-width: 380px) {
+  .container .content {
+    top: 15px;
+  }
+}
+
 @media (max-width: 600px) {
   .container .content {
     padding-left: 25px;
