@@ -32,15 +32,21 @@ export default function Home() {
       <div className={styles.scrollContainer}>
 
         <div className={styles.scrollPage} id="page-1">
-          <p>Cena 1</p>
+          <div className={styles.content}>
+            <p>Cena 1</p>
+          </div>
         </div>
 
         <div className={styles.scrollPage} id="page-2">
-          <p>Cena 2</p>          
+        <div className={styles.content}>
+        <p>Cena 2</p>
+            </div>          
         </div>
 
         <div className={styles.scrollPage} id="page-3">
-          <p>Cena 3</p>            
+        <div className={styles.content}>
+        <p>Cena 3</p>
+            </div>           
         </div>
       
       </div>

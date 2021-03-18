@@ -6,9 +6,10 @@
 }
 
 body {
-  background: linear-gradient(159deg, #687C8F, #303942); 
+  background: linear-gradient(159deg, #687C8F, #303942) no-repeat; 
+  background-attachment: fixed;
   font-family: 'Inter', sans-serif;
-  height: 100vh;
+  
 }
 
 a {

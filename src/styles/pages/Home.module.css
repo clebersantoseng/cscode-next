@@ -53,6 +53,12 @@
   width: 100%;
 }
 
+.content {
+  display: block;
+  width: 100vw;
+  max-height: 100vh;
+}
+
 .scrollPage p {
   display: flex;
   align-items: center;
@@ -63,36 +69,9 @@
   font-weight: bold;
   font-size: 35px;
   width: 100vw;
+
   
 }
 
 
-
-.page1 {
-  /* background: url('../../../public/teste/iphone.jpg') right top no-repeat; */
-  background-size: cover;
-
-  /* width: 100vw;
-  height: 100vh;
-  resize: none;  */
-}
-
-.page2 {
-  /* background: url('../../../public/teste/ipad.jpg') right top no-repeat; */
-  background-size: cover;
-
-   /* width: 100vw;
-  height: 100vh;
-  resize: none;  */
-}
-
-.page3 {
-  /* background: url('../../../public/teste/imac.png') no-repeat; */
-  background-size: cover;
-  background-position: center right;
-
- /* width: 100vw;
-  height: 100vh;
-  resize: none;  */
-}
 
