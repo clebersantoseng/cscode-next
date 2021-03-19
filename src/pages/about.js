@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { FaArrowCircleUp } from 'react-icons/fa';
+import { FaArrowCircleUp, FaHandPointRight } from 'react-icons/fa';
 
 import Head from 'next/head';
 import Link from 'next/link';
@@ -77,6 +77,13 @@ export default function About() {
         <section className={styles.informative}>
           <p>Vamos trabalhar juntos para construir algo ótimo.</p>
         </section>
+
+        <aside>
+          <div className="animate__animated animate__infinite animate__slowe animate__slideInLeft">
+            <FaHandPointRight />
+          </div>
+          <Link href="/contact"><p>Entre Contato</p></Link>
+        </aside>
 
         <footer>
           <p>© 2021 CsCode. All Right Reserved.</p>

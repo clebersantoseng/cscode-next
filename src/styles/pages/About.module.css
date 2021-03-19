@@ -68,7 +68,7 @@
 }
 
 .content .technology {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .content .technology  p {
@@ -89,7 +89,7 @@
 }
 
 .content .technology .technologyGrid {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr;
@@ -121,6 +121,34 @@
   width: 450px;
 }
 
+.content aside {
+  margin-top: 50px;
+
+  display: flex;
+  align-items: center;
+}
+
+.content aside svg {
+  color: #f04f02;
+  font-size: 25px;
+}
+
+.content aside p {
+  font: 32px 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #FFF;
+
+  margin-left: 8px;
+  border-bottom: 2px solid #FFF;
+  transition: all 0.4s;
+}
+
+.content aside p:hover {
+  color: #f04f02;
+  border-bottom: 2px solid #f04f02;
+  cursor: pointer;
+}
+
 .content footer {
   width: 100%;
   height: 70px;
@@ -128,7 +156,7 @@
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .content footer p {
