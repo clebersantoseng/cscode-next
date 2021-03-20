@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 import Head from 'next/head';
 import Link from 'next/link';
@@ -60,9 +60,16 @@ export function Menu() {
           <div className="animate__animated animate__backInRight">
             <div className={styles.companyInfo}>
             
-              <a href="#" className={styles.info}>hello@cscode.com.br</a>
+              <a href="#" className={styles.info}><FaEnvelope />hello@cscode.com.br</a>
+
               <br />
-              <a href="#" className={styles.info}>+5562 99612-1210</a>
+
+              <a 
+                href="https://api.whatsapp.com/send?phone=5562996121210" 
+                target="_blank" 
+                without rel="noreferrer" 
+                className={styles.info}
+              > <FaWhatsapp />+5562 99612-1210</a>
 
               <div className={styles.infoAddress}>
                 <p>183 Antônio Miguel de Castro, Michelle 75265-000</p>
@@ -70,7 +77,11 @@ export function Menu() {
               </div>
 
               <ul>
-                <li><FaInstagram /></li>
+                <li><a 
+                  href="https://www.instagram.com/cscodeoficial/"
+                  target="_blank" 
+                  without rel="noreferrer"
+                ><FaInstagram /></a></li>
                 <li><FaFacebook /></li>
               </ul>
             </div>

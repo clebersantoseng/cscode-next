@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { FaArrowCircleUp, FaHandPointRight } from 'react-icons/fa';
+import { FaHandPointRight } from 'react-icons/fa';
 
 import Head from 'next/head';
 import Link from 'next/link';
@@ -10,10 +10,11 @@ import { GlobalContext } from '../contexts/GlobalContext';
 
 import styles from '../styles/pages/About.module.css';
 import 'animate.css';
+import { Footer } from '../components/Footer';
 
 
 export default function About() {
-  const { openMenu } = useContext(GlobalContext);  
+  const { openMenu } = useContext(GlobalContext);    
 
   return (
 
@@ -84,16 +85,11 @@ export default function About() {
           </div>
           <Link href="/contact"><p>Entre Contato</p></Link>
         </aside>
-
-        <footer>
-          <p>© 2021 CsCode. All Right Reserved.</p>
-          <div>
-            <p>Volte para inicio</p>
-            <Link href="#"><FaArrowCircleUp /></Link>
-          </div>
-        </footer>
+                
       </div>
     </div>
+
+    <Footer />
 
     </>
 

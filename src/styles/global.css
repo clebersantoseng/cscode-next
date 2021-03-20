@@ -5,10 +5,15 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(159deg, #687C8F, #303942) no-repeat; 
   background-attachment: fixed;
   font-family: 'Inter', sans-serif;
+  scroll-behavior: auto;
   
 }
 

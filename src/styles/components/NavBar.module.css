@@ -19,13 +19,17 @@
 
 @media (max-width: 900px) {
   .container {
-    padding-top: 35px
+    top: 35px;
+    padding-top: 35px;
+    display: block;
+    position: sticky !important;
+    
   }
 }
 
 @media (max-width: 600px) {
   .container {
-    top: 35px;
+    top: 10px;
     padding-top: 0;
   }
 
@@ -37,17 +41,21 @@
 
 @media (max-width: 380px) {
   .container .content {
-    top: 15px;
+    top: 10px;
   }
 }
 
+.container .content .logoImage {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
 
-
-.container .content img {
+.container .content .logoImage img {
   height: 50px;
 }
 
-.container .content img:hover {
+.container .content .logoImage img:hover {
  cursor: pointer;
 }
 
@@ -55,6 +63,8 @@
   background: transparent;
   border: none;
   cursor: pointer;
+  height: 80px;
+  padding-top: 9px;
 
   display: flex;
   align-items: center;
@@ -62,10 +72,9 @@
 
 .container .content button svg {
   color: #FFF;
-  margin-right: 10px;
 }
 
 .container .content button p {
   color: #FFF;
-  margin-left: 8px;
+  margin-left: 8px;  
 }

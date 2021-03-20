@@ -13,13 +13,18 @@ export function GlobalProvider({ children }) {
       setOpenMenu(true);      
     }
   }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   
   return(
     <GlobalContext.Provider 
     value={{
       openMenu,
       setOpenMenu,
-      handleMenu
+      handleMenu,
+      scrollToTop
     }}>
       {children}
     </GlobalContext.Provider>
