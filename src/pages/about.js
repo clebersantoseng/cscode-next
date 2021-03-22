@@ -19,6 +19,7 @@ export default function About() {
   return (
 
     <>
+
     <Head>
       <title> CsCode | Sobre</title>
     </Head>

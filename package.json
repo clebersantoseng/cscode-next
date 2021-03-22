@@ -8,10 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@agney/react-loading": "^0.1.2",
     "animate.css": "^4.1.1",
     "next": "10.0.9",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-icons": "^4.2.0"
+    "react-icons": "^4.2.0",
+    "sass": "^1.32.8",
+    "styled-components": "^5.2.1"
   }
 }

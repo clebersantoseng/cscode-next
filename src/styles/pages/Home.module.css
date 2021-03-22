@@ -1,77 +1,21 @@
 .container {
-  height: 100%;  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15vh 85vh;
+  grid-area: header section;
+  place-items: center;
+
+}
+
+.container header {
+  grid-area: header;
+  grid-row: 1/2;
+}
+
+.container section {
+  grid-area: section;
+  grid-row: 2/2;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider {
-  width: 100vw;
-  padding: 5px; 
-
-  bottom: 0;
-  position: absolute;
-  z-index: 99;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-  background: none;
-}
-
-.slider svg {
-  font-size: 12px;
-  color: #FFF;
-  cursor: pointer;
-  margin: 5px 10px;
-  overflow: hidden;
-  transition: all 0.2s;
-}
-
-.slider svg:hover {
-  font-size: 15px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-}
-
-.scrollContainer {
-  display: flex;
-  flex: 1;
-  margin: 0 auto;
   scroll-behavior: smooth;
-
-  overflow-x: hidden;
-  overflow-y: hidden;
-  white-space: nowrap;
 }
-
-.scrollPage {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-.content {
-  display: block;
-  width: 100vw;
-  max-height: 100vh;
-}
-
-.scrollPage p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 300px;
-  
-  color: #FFF;
-  font-weight: bold;
-  font-size: 35px;
-  width: 100vw;
-
-  
-}
-
-
-

@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaMapMarker, FaPaperPlane } from 'react-icons/fa';
 
+import Head from 'next/head';
+
 import { NavBar } from "../components/NavBar";
 import { Menu } from "../components/Menu";
 import { GlobalContext } from '../contexts/GlobalContext';
@@ -15,6 +17,11 @@ export default function Contact() {
 
   return (
     <>
+
+    <Head>
+      <title> CsCode | Contato</title>
+    </Head>
+
     <NavBar />
     { openMenu && <Menu /> }
 

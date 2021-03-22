@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #303942;
+}

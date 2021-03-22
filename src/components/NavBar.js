@@ -8,7 +8,7 @@ import { GlobalContext } from '../contexts/GlobalContext';
 import styles from '../styles/components/NavBar.module.css';
 
 export function NavBar() {
-  const { openMenu, setOpenMenu, handleMenu } = useContext(GlobalContext);
+  const { openMenu, handleMenu } = useContext(GlobalContext);
 
   return (
     <div className={styles.container}  >
@@ -27,7 +27,7 @@ export function NavBar() {
             </div>
 
             <div className="animate__animated animate__flipInY">
-              <p>{ openMenu ? 'CLOSE' : 'MENU' }</p>
+              <p>{ openMenu ? 'CLOSE' : 'MENU'}</p>
             </div>
             
         </button>

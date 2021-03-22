@@ -3,12 +3,18 @@ import { FaInstagram, FaFacebook, FaWhatsapp, FaEnvelope } from 'react-icons/fa'
 
 import Head from 'next/head';
 import Link from 'next/link';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 
 import { NavBar } from './NavBar';
 import { GlobalContext } from '../contexts/GlobalContext';
 
 import styles from '../styles/components/Menu.module.css';
 import 'animate.css';
+
+Router.onRouteChangeStart = url => NProgress.start();
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 export function Menu() {
   const { handleMenu } = useContext(GlobalContext);
