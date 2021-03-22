@@ -9,7 +9,13 @@
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
-  touch-action: pan-x;
+  touch-action: pan-left pan-right;
+}
+
+@media (max-width: 1024px){
+  .items {
+    overflow-x: scroll;
+  }
 }
 
 .item {

@@ -23,7 +23,9 @@ export default function Slide() {
 
     <div className={styles.itemsWrapper} id="items-wrapper">
       <div className={styles.items}  id="items">
-        <div className={styles.item} id="item"><img src="image/imac.png" /></div>
+        <div className={styles.item} id="item">
+          <img src="image/imac.png" />
+        </div>
         <div className={styles.item} id="item"><img src="image/responsive.png" /></div>
       </div>
     </div>
