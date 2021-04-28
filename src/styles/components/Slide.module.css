@@ -25,12 +25,26 @@
   height: 100%;
 
   scroll-snap-align: start;
-  pointer-events: none;
+  pointer-events: none;  
 }
 
-.item img {
+.item main {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+}
+
+.item main img {
   width: 100vw;
   height: 80vh;
 
   object-fit: cover;
+}
+
+.item h1 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 38px;
+  color: #FFF;
+  
 }

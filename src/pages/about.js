@@ -1,11 +1,9 @@
 import { useContext } from 'react';
-import { FaHandPointRight } from 'react-icons/fa';
+import { FaHandPointRight, FaClipboardList } from 'react-icons/fa';
 
 import Head from 'next/head';
 import Link from 'next/link';
-
-import { NavBar } from "../components/NavBar";
-import { Menu } from "../components/Menu";
+;
 import { GlobalContext } from '../contexts/GlobalContext';
 
 import styles from '../styles/pages/About.module.css';
@@ -23,9 +21,6 @@ export default function About() {
     <Head>
       <title> CsCode | Sobre</title>
     </Head>
-
-    <NavBar />
-    { openMenu && <Menu /> }
 
     <div className={styles.container}>
       <div className={styles.content}>
@@ -82,9 +77,12 @@ export default function About() {
 
         <aside>
           <div className="animate__animated animate__infinite animate__slowe animate__slideInLeft">
-            <FaHandPointRight />
+            
           </div>
-          <Link href="/contact"><p>Entre Contato</p></Link>
+          <div className={styles.contact}>
+            <FaClipboardList />
+            <Link href="/contact"><p>SOLICITE ORÇAMENTO</p></Link>
+          </div>
         </aside>
                 
       </div>

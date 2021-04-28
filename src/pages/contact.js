@@ -2,9 +2,6 @@ import { useContext } from 'react';
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaMapMarker, FaPaperPlane } from 'react-icons/fa';
 
 import Head from 'next/head';
-
-import { NavBar } from "../components/NavBar";
-import { Menu } from "../components/Menu";
 import { GlobalContext } from '../contexts/GlobalContext';
 
 import styles from '../styles/pages/Contact.module.css';
@@ -21,9 +18,6 @@ export default function Contact() {
     <Head>
       <title> CsCode | Contato</title>
     </Head>
-
-    <NavBar />
-    { openMenu && <Menu /> }
 
     <div className={styles.container}>
       <div className={styles.content}>

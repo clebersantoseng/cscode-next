@@ -24,7 +24,17 @@ export default function Slide() {
     <div className={styles.itemsWrapper} id="items-wrapper">
       <div className={styles.items}  id="items">
         <div className={styles.item} id="item">
+          <main>
+          <h1 className="animate__animated animate__faster animate__backInDown">
+            Automação Comercial
+          </h1>
+
+          <p className="animate__animated animate__fast animate__backInLeft">
+            Automatize processos por meio de equipamentos e sistemas práticos e seguros para gestão empresarial.
+          </p>
+
           <img src="image/imac.png" />
+          </main>
         </div>
         <div className={styles.item} id="item"><img src="image/responsive.png" /></div>
       </div>

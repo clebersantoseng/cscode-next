@@ -8,12 +8,9 @@ export function GlobalProvider({ children }) {
   const [openMenu, setOpenMenu] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  function handleMenu() {
-    if(openMenu) {      
-      setOpenMenu(false);      
-    } else {      
-      setOpenMenu(true);      
-    }
+  function handleMenu(state) {  
+      setOpenMenu(state);
+      console.log(openMenu);
   }
 
   function scrollToTop() {

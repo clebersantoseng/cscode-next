@@ -19,3 +19,10 @@
   display: flex;
   scroll-behavior: smooth;
 }
+
+.container section img {
+width: 100vw;
+  height: 80vh;
+
+  object-fit: cover;
+}

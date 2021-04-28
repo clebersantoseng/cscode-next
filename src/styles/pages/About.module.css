@@ -128,27 +128,35 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.content aside svg {
-  color: #f04f02;
+.content aside .contact {
+  background: #f04f02;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content aside .contact svg {
+  color: #fff;
   font-size: 25px;
 }
 
 .content aside p {
-  font: 32px 'Poppins', sans-serif;
+  font: 18px 'Poppins', sans-serif;
   font-weight: 600;
   color: #FFF;
 
   margin-left: 8px;
-  border-bottom: 2px solid #FFF;
   transition: all 0.4s;
 }
 
-.content aside p:hover {
-  color: #f04f02;
-  border-bottom: 2px solid #f04f02;
-  cursor: pointer;
+.content aside .contact:hover {
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3); ; 
 }
 
 

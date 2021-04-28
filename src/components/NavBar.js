@@ -9,31 +9,59 @@ import styles from '../styles/components/NavBar.module.css';
 
 export function NavBar() {
   const { openMenu, handleMenu } = useContext(GlobalContext);
+  
 
   return (
-    <div className={styles.container}  >
-      
-      <div className={styles.content}  >
-        <div className={styles.logoImage}>           
-          <Link href="/" >
-            <img src="image/cscode-color.png" alt="CsCode" />
-          </Link>
-        </div>
-        
-        <button type="button" onClick={handleMenu}>
-            
-            <div className="animate__animated animate__flipInX">
-              { openMenu ? <FaTimesCircle fontSize="30" /> : <FaBars fontSize="30"/> }
-            </div>
+    <header className={styles.navbar}>
+      <Link href='/'>
+        <img src="/image/cscode-color.png" alt="CsCODE" />
+      </Link>
 
-            <div className="animate__animated animate__flipInY">
-              <p>{ openMenu ? 'CLOSE' : 'MENU'}</p>
-            </div>
-            
+      <nav>
+        <Link href='/'>HOME</Link>
+        <Link href='/about'>SOBRE</Link>
+        <Link href='#'>SERVIÇOS</Link>
+        <Link href='/contact'>CONTATO</Link>
+      </nav>
+
+      <div className={styles.navmobile}>
+        <button onClick={() => handleMenu(true)}>
+          <FaBars />
+        </button>        
+      </div>
+
+      <div className={styles.menu} style={{ display: (openMenu ? 'block' : 'none')}}>
+        <button onClick={() => handleMenu(false)}>          
+          <p>CLOSE</p>
+          <FaTimesCircle />
         </button>
         
+         <ul>
+            <li>
+             <button onClick={() => handleMenu(false)}>
+              <Link href='/'>HOME</Link>
+             </button>
+            </li>
+
+           <li>
+             <button onClick={() => handleMenu(false)}>
+              <Link href='/about'>SOBRE</Link>
+             </button>
+            </li>
+
+            <li>
+             <button onClick={() => handleMenu(false)}>
+              <Link href='#'>SERVIÇOS</Link>
+             </button>
+            </li>
+
+            <li>
+             <button onClick={() => handleMenu(false)}>
+              <Link href='/contact'>CONTATO</Link>
+             </button>
+            </li>
+         </ul>
       </div>
-      
-    </div>
+    </header>
   );
 }
