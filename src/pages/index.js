@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import Slide from '../components/Slide';
+
 import styles from '../styles/pages/Home.module.css';
 
 export default function Home() {
@@ -12,12 +14,9 @@ export default function Home() {
       
 
       <div className={styles.container}>
-        <header> 
-        </header>
+        <Slide />
 
-        <section>
-        <img src="image/imac.png" />
-        </section>
+        
 
       </div>
     

@@ -2,10 +2,16 @@ import { useContext } from 'react';
 import { FaBars, FaTimesCircle } from 'react-icons/fa';
 
 import Link from 'next/link';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 
 import { GlobalContext } from '../contexts/GlobalContext';
 
 import styles from '../styles/components/NavBar.module.css';
+
+Router.onRouteChangeStart = url => NProgress.start();
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 export function NavBar() {
   const { openMenu, handleMenu } = useContext(GlobalContext);
@@ -20,7 +26,7 @@ export function NavBar() {
       <nav>
         <Link href='/'>HOME</Link>
         <Link href='/about'>SOBRE</Link>
-        <Link href='#'>SERVIÇOS</Link>
+        <Link href='/service'>SERVIÇOS</Link>
         <Link href='/contact'>CONTATO</Link>
       </nav>
 
@@ -51,7 +57,7 @@ export function NavBar() {
 
             <li>
              <button onClick={() => handleMenu(false)}>
-              <Link href='#'>SERVIÇOS</Link>
+              <Link href='/service'>SERVIÇOS</Link>
              </button>
             </li>
 

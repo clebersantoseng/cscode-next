@@ -1,28 +1,7 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 15vh 85vh;
-  grid-area: header section;
-  place-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 
 }
 
-.container header {
-  grid-area: header;
-  grid-row: 1/2;
-}
-
-.container section {
-  grid-area: section;
-  grid-row: 2/2;
-
-  display: flex;
-  scroll-behavior: smooth;
-}
-
-.container section img {
-width: 100vw;
-  height: 80vh;
-
-  object-fit: cover;
-}

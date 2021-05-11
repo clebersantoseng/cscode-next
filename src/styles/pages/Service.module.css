@@ -1,0 +1,74 @@
+.container {
+  width: 100vw;
+  height: 100%;
+
+  padding-top: 50px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  scroll-behavior: smooth;
+  transition: behavior 0.4s;
+}
+
+.content {
+  display: block;
+  width: 1150px;
+  height: 100%;
+  overflow-y: hidden;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content > header {
+  padding: 0.5rem;
+  border-bottom: solid 1px #687C8F;
+}
+
+.content > header p {
+ color: #FFF; 
+}
+
+.content > section {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+}
+
+.content > section p {
+  color: #FFF;
+  font-size: 22px;
+}
+
+.content > aside {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin-top: 2rem;
+}
+
+.content > aside svg {
+  color: #f04f02;
+  font-size: 28px;
+  margin-right: 8px;
+}
+
+.content > aside h1 {
+  font-size: 32px;
+  color: #FFF;
+  vertical-align: baseline;
+  margin: 0;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
