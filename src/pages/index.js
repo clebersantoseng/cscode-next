@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title> CsCode | Desenvolvimento WEB</title>
+      <title> CsCode | Sua escolha inteligente.</title>
     </Head>    
       
 

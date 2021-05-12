@@ -10,7 +10,6 @@ export function GlobalProvider({ children }) {
 
   function handleMenu(state) {  
       setOpenMenu(state);
-      console.log(openMenu);
   }
 
   function scrollToTop() {
