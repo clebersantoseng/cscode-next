@@ -1,7 +1,44 @@
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  margin-top: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.wrapper > section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 35px;
+  border-bottom: solid 1px #687C8F;
+}
+
+.wrapper section img {
+  width: 50%;
 
 }
 
+.slideText {
+  width: 50%;
+  
+}
+
+.slideText h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #FFF;
+  min-width: 300px;
+}
+
+.slideText p {
+  font-size: 1rem;
+  color: #E5E5E5;
+  margin-top: 10px;
+}

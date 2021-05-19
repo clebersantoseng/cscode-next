@@ -7,7 +7,7 @@ export default function Whatsapp() {
     <Container>
       <Box>
         <a href="https://api.whatsapp.com/send?phone=5562996121210" target="_blank" rel="noopener noreferrer" >
-          <img src="image/whatsapp.png" alt="Whatsapp" />
+          <img src="/image/whatsapp.png" alt="Whatsapp" />
         </a>
       </Box>
     </Container>
