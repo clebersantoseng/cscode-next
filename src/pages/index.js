@@ -4,6 +4,7 @@ import { FaChartPie, FaLaptopCode, FaShieldAlt } from 'react-icons/fa';
 
 
 import styles from '../styles/pages/Home.module.css';
+import 'animate.css';
 
 export default function Home() {
 
