@@ -27,11 +27,12 @@ export default function Home() {
           </section>
 
           <aside>
-            <div className={styles.wrapperGrid}>
+            <div className={styles.wrapperGrid}>              
+
               <div className={styles.gridItem}>
                 <div className={styles.gridText}>
-                  <h1><FaShieldAlt /> Assistência Técnica</h1>
-                  <p>Trabalhamos com técnicos e especialistas formados em áreas tecnólogicas, que amam o que fazem, e se empenham para resolver seu problema da melhor e mais rapida forma possivel.</p>
+                  <h1><FaChartPie /> Gerenciamento</h1>
+                  <p>Disponibilizamos as melhores práticas de gestão atraves de softwares e serviços que ajuda voce a empreender e tomar decições que seu negócio precisa.</p>
                 </div>
 
                 <Link href="#">Saiba mais</Link>
@@ -39,8 +40,8 @@ export default function Home() {
 
               <div className={styles.gridItem}>
                 <div className={styles.gridText}>
-                  <h1><FaChartPie /> Gerenciamento</h1>
-                  <p>Disponibilizamos as melhores práticas de gestão atraves de softwares e serviços que ajuda voce a empreender e tomar decições que seu negócio precisa.</p>
+                  <h1><FaShieldAlt /> Manutenção</h1>
+                  <p>Trabalhamos com técnicos e especialistas formados em áreas tecnólogicas, que amam o que fazem, e se empenham para resolver seu problema da melhor e mais rapida forma possivel.</p>
                 </div>
 
                 <Link href="#">Saiba mais</Link>
