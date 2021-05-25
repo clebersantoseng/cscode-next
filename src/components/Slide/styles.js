@@ -5,11 +5,11 @@ export const Container = styled.div`
   max-width: 1200px;
 
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  position: relative ;
 
   padding-left: 1rem;
-  position: relative ;
 
   > div {
     position: absolute;
@@ -19,7 +19,7 @@ export const Container = styled.div`
       opacity: 1;
     }
   }
-
+  
   @media (max-width: 600px) {
     padding-left: 0;
     padding-top: 50px;
