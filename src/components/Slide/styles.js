@@ -19,11 +19,13 @@ export const Container = styled.div`
       opacity: 1;
     }
   }
-  
+
   @media (max-width: 600px) {
     padding-left: 0;
     padding-top: 50px;
     padding-bottom: 25px;
     margin-bottom: 25px;
+
+    justify-content: center;
   }
 `;
