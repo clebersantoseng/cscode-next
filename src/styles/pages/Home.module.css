@@ -27,7 +27,12 @@
 
 .slideText {
   width: 50%;
+  position: relative;
   
+}
+
+.slideText img {
+  position: absolute;
 }
 
 .slideText h1 {
@@ -120,10 +125,13 @@
 @media (max-width: 600px) {
   .wrapper > section  {
     flex-direction: column;
+    height: 100%;
   }
 
   .wrapper section img {
     width: 100%;
+    margin-top: 2.5rem;
+    
   }
 
   .slideText {

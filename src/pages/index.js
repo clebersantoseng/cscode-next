@@ -5,6 +5,7 @@ import { FaChartPie, FaLaptopCode, FaShieldAlt } from 'react-icons/fa';
 
 import styles from '../styles/pages/Home.module.css';
 import 'animate.css';
+import Slide from '../components/Slide';
 
 export default function Home() {
 
@@ -19,8 +20,10 @@ export default function Home() {
         <div className={styles.wrapper}>
           <section>
             <div className={styles.slideText}>
-              <h1 className="animate__animated animate__faster animate__backInLeft">Gestão Comercial</h1>
-              <p className=" animate__animated animate__slow animate__fadeInLeft">Facilite a sua produção, automatize sua empresa !</p>
+              {/* <h1 className="animate__animated animate__faster animate__backInLeft">Gestão Comercial</h1>
+              <p className=" animate__animated animate__slow animate__fadeInLeft">Facilite a sua produção, automatize sua empresa !</p> */}
+
+              <Slide />
             </div>
 
             <img src="/image/dashboard.png" alt="Computador" />
