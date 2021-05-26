@@ -8,6 +8,8 @@ export default function Slide() {
 
   useEffect(() => {
     let text = document.querySelectorAll("div #slider");
+    let element = document.querySelectorAll("div #slider h1");
+    let paragraph = document.querySelectorAll("div #slider p");
     let max = text.length;
     let currentTextIndex = 0;
     let time = 5000;
@@ -21,7 +23,10 @@ export default function Slide() {
 
     function nextText() {
 
+      element[currentTextIndex].classList.remove('animate__animated', 'animate__fadeInLeft');
+      paragraph[currentTextIndex].classList.remove('animate__animated', 'animate__slow', 'animate__fadeInLeft');
       text[currentTextIndex].classList.remove("selected")
+
 
       currentTextIndex++
       
@@ -29,7 +34,10 @@ export default function Slide() {
         currentTextIndex = 0
       }
 
-      text[currentTextIndex].classList.add("selected")
+      element[currentTextIndex].classList.add('animate__animated', 'animate__fadeInLeft');
+      paragraph[currentTextIndex].classList.add('animate__animated', 'animate__slow', 'animate__fadeInLeft');
+      text[currentTextIndex].classList.add("selected");
+      
     }
   
     window.addEventListener("load", start)
@@ -42,17 +50,17 @@ export default function Slide() {
     <Container>
       <div id="slider" className="selected">
         <h1>Gestão Comercial</h1>
-        <p className=" animate__animated animate__slow animate__fadeInLeft">Facilite a sua produção, automatize sua empresa.</p>
+        <p>Facilite a sua produção, automatize sua empresa.</p>
       </div>
 
       <div id="slider">
         <h1>Assistência Técnica</h1>
-        <p className=" animate__animated animate__slow animate__fadeInLeft">Tenha o seu problema resolvido em instantes.</p>
+        <p>Tenha o seu problema resolvido em instantes.</p>
       </div>
 
       <div id="slider">
         <h1>Criação Web</h1>
-        <p className=" animate__animated animate__slow animate__fadeInLeft">Exatamente como você precisa.</p>
+        <p>Exatamente como você precisa.</p>
       </div>   
       
     </Container>
