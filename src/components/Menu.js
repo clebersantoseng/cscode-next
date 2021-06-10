@@ -44,7 +44,7 @@ export function Menu() {
                   </li>
 
                   <li>
-                    <Link href="/about" >
+                    <Link href="/#" >
                       <button type="button" onClick={handleMenu}>
                         Sobre
                       </button>
@@ -52,7 +52,7 @@ export function Menu() {
                   </li>
 
                   <li>
-                    <Link href="/contact" >
+                    <Link href="/contato" >
                       <button type="button" onClick={handleMenu}>
                         Contato
                       </button>

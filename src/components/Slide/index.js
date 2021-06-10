@@ -13,15 +13,8 @@ export default function Slide() {
     let max = text.length;
     let currentTextIndex = 0;
     let time = 5000;
-    
-
-    function start() {
-      setInterval(() => {
-        nextText()
-      }, time);
-    }
-
-    function nextText() {
+   
+    setInterval(() => {
 
       element[currentTextIndex].classList.remove('animate__animated', 'animate__fadeInLeft');
       paragraph[currentTextIndex].classList.remove('animate__animated', 'animate__slow', 'animate__fadeInLeft');
@@ -37,20 +30,16 @@ export default function Slide() {
       element[currentTextIndex].classList.add('animate__animated', 'animate__fadeInLeft');
       paragraph[currentTextIndex].classList.add('animate__animated', 'animate__slow', 'animate__fadeInLeft');
       text[currentTextIndex].classList.add("selected");
-      
-    }
-  
-    window.addEventListener("load", start)
-  },[])
 
-  
+      }, time);
+  });
   
   return (
 
     <Container>
-      <div id="slider" className="selected">
-        <h1>Gestão Comercial</h1>
-        <p>Facilite a sua produção, automatize sua empresa.</p>
+      <div id="slider" className="selected ">
+        <h1 className="animate__animated', 'animate__fadeInLeft">Gestão Comercial</h1>
+        <p className="animate__animated', 'animate__slow', 'animate__fadeInLeft">Facilite a sua produção, automatize sua empresa.</p>
       </div>
 
       <div id="slider">

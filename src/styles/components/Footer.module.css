@@ -10,6 +10,9 @@
   bottom: 0;
   padding: 0 150px;
   padding-bottom: 50px;
+  padding-top: 2.5rem;
+
+  border-top: solid 1px #687C8F;
 }
 
 .content footer p {

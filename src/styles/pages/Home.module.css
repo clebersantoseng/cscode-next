@@ -168,6 +168,49 @@
   margin-left: 1rem;
 }
 
+.brief {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.brief img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.brief h2 {
+  color: #FFF;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.brief p {
+  color: #C0C0C0;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+.brief a {
+  margin-bottom: 1rem;
+  padding: 8px 12px;
+
+  color: #F04F02;
+  border: solid 1px #F04F02;
+  cursor: pointer;
+  transition: color 0.2s;
+
+}
+
+.brief a:hover {
+  color: #E5E5E5;
+  border: solid 1px #687C8F;
+
+}
 
 /* RESPONSIVO */
 

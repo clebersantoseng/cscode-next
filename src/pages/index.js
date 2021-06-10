@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaChartPie, FaLaptopCode, FaShieldAlt } from 'react-icons/fa';
 
+import Whatsapp from '../components/Whatsapp';
 
 import styles from '../styles/pages/Home.module.css';
 import 'animate.css';
@@ -21,9 +22,6 @@ export default function Home() {
         <div className={styles.wrapper}>
           <section>
             <div className={styles.slideText}>
-              {/* <h1 className="animate__animated animate__faster animate__backInLeft">Gestão Comercial</h1>
-              <p className=" animate__animated animate__slow animate__fadeInLeft">Facilite a sua produção, automatize sua empresa !</p> */}
-
               <Slide />
             </div>
 
@@ -114,7 +112,21 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
 
+      <div className={styles.container}>
+        <div className={styles.wrapper}>
+          <div className={styles.brief}>
+            <img src="/image/logo-color.png" alt="Logo CsCode" />
+            <h2>A base digital para o seu sucesso</h2>
+            <p>Enteda como a CsCODE pode ajudar você preparar seu negócio para a transformação digital.</p>
+
+            <Link href="/contato">SOLICITE UM CONTATO</Link>
+          </div>
+        </div>
+      </div>
+
+      <Whatsapp />
+
+    </>
   )
 }

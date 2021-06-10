@@ -13,8 +13,8 @@ body {
   background: linear-gradient(159deg, #687C8F, #303942) no-repeat; 
   background-attachment: fixed;
   font-family: 'Inter', sans-serif;
-  scroll-behavior: auto;
-  
+  scroll-behavior: smooth;
+  overflow-x: hidden; 
 }
 
 a {
@@ -23,4 +23,18 @@ a {
 
 button {
   font-family: 'Inter', sans-serif;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background: linear-gradient(159deg, #687C8F, #303942);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f04f03;
+  border-radius: 20px;
 }

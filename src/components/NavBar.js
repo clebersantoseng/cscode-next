@@ -25,9 +25,9 @@ export function NavBar() {
 
       <nav>
         <Link href='/'>HOME</Link>
-        <Link href='/about'>SOBRE</Link>
-        <Link href='/service'>SERVIÇOS</Link>
-        <Link href='/contact'>CONTATO</Link>
+        <Link href='/#'>SOBRE</Link>
+        <Link href='/#'>SERVIÇOS</Link>
+        <Link href='/contato'>CONTATO</Link>
       </nav>
 
       <div className={styles.navmobile}>
@@ -51,19 +51,19 @@ export function NavBar() {
 
            <li>
              <button onClick={() => handleMenu(false)}>
-              <Link href='/about'>SOBRE</Link>
+              <Link href='/#'>SOBRE</Link>
              </button>
             </li>
 
             <li>
              <button onClick={() => handleMenu(false)}>
-              <Link href='/service'>SERVIÇOS</Link>
+              <Link href='/#'>SERVIÇOS</Link>
              </button>
             </li>
 
             <li>
              <button onClick={() => handleMenu(false)}>
-              <Link href='/contact'>CONTATO</Link>
+              <Link href='/contato'>CONTATO</Link>
              </button>
             </li>
          </ul>

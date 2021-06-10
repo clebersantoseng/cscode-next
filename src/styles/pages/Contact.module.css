@@ -1,268 +1,230 @@
 .container {
-  margin-top: 30px;
-  width: 100vw;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-}
-
-.content {
-  display: block;
-  width: 1150px;
-  height: 100%;
-  overflow-y: hidden;
-  
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-right: auto;
+  width: 100%;
+  max-width: 1149px;
   margin-left: auto;
+  margin-right: auto;
 }
 
-.content .contactTitle {
-  padding-top: 50px;
-  margin-left: 8px;
+.wrapper {
+  margin-top: 3rem;  
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.content .contactTitle p {
-  color: #FFF;
-  font: 16px 'Poppins', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: .3em;
+.wrapper header {
+  background: url('../../../public/image/contato.jpg') no-repeat center;
+  background-size: cover;
+
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 5px #303942;
 }
 
-.content .contactTitle p::after {
-  content: "";
-  display: block;
-  background-color: #f04f02;
-  border-radius: 10px;
-  height: 5px;
-  width: 25px;
-  margin-top: 3px;
-  box-sizing: border-box;
+.wrapper header h1 {
+  color: #F04F02;
+  padding-bottom: 10px;
+  padding-top: 120px;
+  padding-left: 1rem;
+  text-shadow: 1px 1px 1px #EEE;
+
 }
 
-.content .contactSubtitle {
-  margin-top: 20px;  
+.wrapper main {
+  margin-top: 3rem;  
+  display: flex;
+  justify-content: space-between;
+}
+.contatoLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-end;
 }
 
-.content .contactSubtitle p {
-  font: 56px 'Poppins', sans-serif;
-  font-weight: 700;
-  color: #FFF;
-  word-wrap: break-word;
-  width: 850px;
-  line-height: 1.3em;
-}
-
-.content section {
-  margin-top: 80px;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  gap: 100px;
-}
-
-.content section .contactInfo h1 {
-  font: 24px 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #FFF;
-  margin-bottom: 30px;
-}
-
-.content section .contactInfo h1::after {
-  content: "";
-  display: block;
-  background-color: #f04f02;
-  border-radius: 10px;
-  height: 5px;
-  width: 40px;
-  margin-top: 3px;
-  box-sizing: border-box;
-}
-
-.content section .contactInfo p {
-  font: 16px 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #BABABA;
-  margin-bottom: 16px;
-}
-
-.content section .contactInfo ul {
+.contatoLeft ul {
   list-style: none;
 }
 
-.content section .contactInfo ul li {
-  margin-top: 30px;
+.contatoLeft ul li {
   display: flex;
+  align-content: center;
+  vertical-align: text-bottom;
+  margin-top: 1.5rem;
+  text-shadow: 1px 1px 1px #303942;
+  transition: color 0.2ms;
+}
+
+.contatoLeft ul li:hover {
+  cursor: pointer;
+}
+
+.contatoLeft ul li h1 {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Inter;
+  vertical-align: text-bottom;
+}
+.contatoLeft ul li h2 {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Inter;
+  vertical-align: text-bottom;
+
+  margin-right: 4px;
+}
+
+.contatoLeft ul li svg {
+  color: #FFF;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+
+.contatoRight {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.content section .contactInfo ul li svg{
-  font-size: 25px;
-  color: #FFF;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.content section .contactInfo ul li a{
-  font: 16px 'Poppins', sans-serif;
-  font-weight: 400;
-  color: #FFF;
-  cursor: pointer;
-}
-
-.content section .contactForm h1 {
-  font: 24px 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #FFF;
-  margin-bottom: 30px;
-}
-
-.content section .contactForm h1::after {
-  content: "";
-  display: block;
-  background-color: #f04f02;
-  border-radius: 10px;
-  height: 5px;
-  width: 40px;
-  margin-top: 3px;
-  box-sizing: border-box;
-}
-
-.content section .contactForm form {
+.contatoRight form {
+  width: 350px;
   display: flex;
-  flex: 1;
   flex-direction: column;
+
+  background: #303942;
+  margin: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  border-radius: 8px;
+  border: solid 1px #BABABA;
+  box-shadow: 2px 5px 5px #303942;
+
 }
 
-.content section .contactForm form .inputGroup {
-  display: flex;
-}
+.contatoRight form input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #687C8F;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Inter;
 
-.content section .contactForm form .inputGroup input + input {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
+  display: inline-block;
+  box-sizing: border-box;
 
-.content section .contactForm form input {
   width: 100%;
-  flex: 1;
-  margin-bottom: 8px;
+  height: 40px;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contatoRight form input:focus {
+  border-bottom: 1px solid #F04F02;
+}
+
+.contatoRight form input::placeholder {
+  color: #F04F02;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Inter;
+}
+
+.contatoRight form textarea {
   background: none;
   border: none;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
-  height: 45px;
-  font: 16px 'Poppins', sans-serif;
+  border-bottom: 1px solid #687C8F;
   color: #FFF;
-  padding: 0 24px;
-  transition: border-bottom ease-in 0.2s;
-}
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Inter;
 
-.content section .contactForm form input:focus {
-  border-bottom: solid 1px #f04f02;
-}
-
-.content section .contactForm form input::placeholder {
-  color: #FFF;
-}
-
-.content section .contactForm form textarea {
-  background: none;
-  border: none;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  box-sizing: border-box;
   resize: none;
 
-  margin-bottom: 10px;
-  font: 16px 'Poppins', sans-serif;
-  color: #FFF;
-  padding: 0 24px;
-  transition: border-bottom ease-in 0.2s;
+  width: 100%;
+  height: 80px;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
-.content section .contactForm form textarea:focus {
-  border-bottom: solid 1px #f04f02;
+.contatoRight form textarea:focus {
+  border-bottom: 1px solid #F04F02;
 }
 
-.content section .contactForm form textarea::placeholder {
-  color: #FFF;
-}
-
-.content section .contactForm form button {
-  height: 50px;
-  width: 200px;
-  background: #00AB55;
-  border: none;
-  border-radius: 8px;
-  color: #FFF;
-  font: 16px 'Poppins', sans-serif;
+.contatoRight form textarea::placeholder {
+  color: #F04F02;
   font-weight: 400;
-  box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-  transition: background ease-in 0.2s;
-
-  margin-bottom: 30px; 
-}
-
-.content section .contactForm form button svg {
   font-size: 16px;
-  margin-right: 8px;  
+  font-family: Inter;
 }
 
-.content section .contactForm form button:hover {
-  background: #007B55;
+.contatoRight form button {
+  background: #F04F02;
+  border: none;
+  color: #FFF;
+
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: Inter;
+  cursor: pointer;
+  transition: background 0.2ms;
 }
 
-/* RESOLUTION MAX-1200PX */
-
-@media (max-width: 1050px) {
-  .container {
-    height: 100vh;
-    justify-content: space-between;
-  }
+.contatoRight form button:hover {
+  filter: brightness(0.9);
 }
+
+.contatoRight form button svg {
+  margin-right: 8px;
+}
+
+
+/* ----- RESPONSIVO ----- */
 
 @media (max-width: 900px) {
-  .container {
-    height: 100%;
-  }
+  .wrapper header {
+    height: 150px;
+  }  
 
-  .content .contactSubtitle p {
-    width: 600px;
-    font-size: 48px;
-  }
-
-  .content section {
-    gap: 50px;
+  .wrapper header h1 {
+    padding-top: 85px;
   }
 }
 
-/* RESOLUTION MAX-600PX */
-
-@media (max-width: 600px)  {
-  .content {
-    padding-left: 10px;
-    padding-right: 10px;
+@media (max-width: 600px) {
+  .wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
-  .content section {
-    grid-template-columns: 2fr;
+  .wrapper header {
+    height: 100px;
+  }  
+
+  .wrapper header h1 {
+    padding-top: 50px;
   }
 
-  .content .contactSubtitle p {
-    width: 100%;
-    font-size: 38px;
-  }
-
-  .content section .contactForm form .inputGroup {
+  .wrapper main {
     flex-direction: column;
   }
 
-  .content section .contactForm form .inputGroup input + input {
-    margin-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .contatoLeft {
+    margin-bottom: 4rem;
+    padding-left: 8px;
+    align-self: flex-start;
   }
 
-  
+  .contatoRight form {
+    margin: 0px;
+  }
 }
