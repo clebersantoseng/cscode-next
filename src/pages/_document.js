@@ -6,7 +6,8 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="shortcut icon" href="favicon.ico" type="ico" />
-          <meta name="description" content="Desenvolvimento WEB" />
+          <meta name="description" content="CsCODE | Sua escolha inteligente" />
+          <meta name="google-site-verification" content="-IHnTGBuJxcmrUHuzkeP-MXqydK4SIOFOa2SrRRX1ZM" />
           <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" type="image/png" />
 
           <link rel="preconnect" href="https://fonts.gstatic.com" />
