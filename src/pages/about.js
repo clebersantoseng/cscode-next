@@ -81,7 +81,7 @@ export default function About() {
           </div>
           <div className={styles.contact}>
             <FaClipboardList />
-            <Link href="/contact"><p>SOLICITE ORÇAMENTO</p></Link>
+            <Link href="/contato"><p>SOLICITE ORÇAMENTO</p></Link>
           </div>
         </aside>
                 
