@@ -116,7 +116,12 @@ export default function Home() {
 
       <div className={styles.section04}>
         <div className={styles.image}>
-        <img src="/image/notebook.png" alt="Serviços de informática" />
+        <Image 
+          src="/image/notebook.png" 
+          alt="Serviços de informática" 
+          width={1402}
+          height={812}
+        />
         </div>
         <div className={styles.techInfo}>
           <h1>SOLUÇÕES COMPLETAS DE TI</h1>
