@@ -6,8 +6,8 @@ import { GlobalContext } from '../contexts/GlobalContext';
 
 import styles from '../styles/pages/Contact.module.css';
 import 'animate.css';
-import 'mapbox-gl/dist/mapbox-gl.css';
 import { Footer } from '../components/Footer';
+import Maps from '../components/Maps';
 
 
 export default function Contato() {
@@ -48,6 +48,10 @@ export default function Contato() {
             </form>
           </div>
         </main>
+
+        <aside>
+        <Maps/>
+        </aside>
 
         <Footer />
       </div>

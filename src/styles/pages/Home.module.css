@@ -117,9 +117,7 @@
   width: 100%;
 
   background: #FFF;
-  margin-top: 3rem;
-
-  
+  margin-top: 3rem;  
 }
 
 .wrapperAmbrosio {
@@ -168,48 +166,70 @@
   margin-left: 1rem;
 }
 
-.brief {
+.section04 {
+  background: #F04F05;
+  width: 100%;
+  
   display: flex;
-  flex-direction: column;
-
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  padding-bottom: 2rem;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
 }
 
-.brief img {
-  width: 80px;
-  margin-bottom: 10px;
+.section04 .image {
+  width: 40vw;
 }
 
-.brief h2 {
+.section04 .image > img {
+  min-width: 350px;
+  width: 100%;
+}
+
+.section04 .techInfo {
+  width: 60vw;
+  padding: 1.5rem;
+}
+
+.section04 .techInfo h1 {
+  color: #FFF;
+  font-size: 20px;
+  margin-left: 2rem;
+}
+
+.section04 .techInfo h2 {
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  text-align: right;
+  margin-top: 2rem;
+
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.section04 .techInfo p {
+  color: #303942;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.section04 .techInfo h3 {
   color: #FFF;
   font-weight: bold;
-  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: right;
+  margin-top: 2rem;
 }
 
-.brief p {
-  color: #C0C0C0;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-}
-
-.brief a {
-  margin-bottom: 1rem;
-  padding: 8px 12px;
-
-  color: #F04F02;
-  border: solid 1px #F04F02;
-  cursor: pointer;
-  transition: color 0.2s;
-
-}
-
-.brief a:hover {
-  color: #E5E5E5;
-  border: solid 1px #687C8F;
-
+.section04 .techInfo h3 > svg {
+  font-size: 35px;
+  margin-right: 12px;
 }
 
 /* RESPONSIVO */
@@ -263,6 +283,30 @@
 
   .wrapperAmbrosio > section img {
     align-items: center;
+  }
+
+  .section04 {
+    flex-direction: column-reverse;
+    padding: 0rem;
+  }
+
+  .section04 .image {
+    width: 100vw;
+    padding: 0rem;
+  }
+  
+  .section04 .techInfo {
+    width: 100vw;
+    padding: 1.5rem;
+  }
+
+  .section04 .techInfo h1 {
+    font-size: 18px;
+    margin-left: 0rem;
+  }
+
+  .section04 .techInfo h2 {
+    font-size: 38px;
   }
 
   

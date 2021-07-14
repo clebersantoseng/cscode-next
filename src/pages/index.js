@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaChartPie, FaLaptopCode, FaShieldAlt } from 'react-icons/fa';
+import { FaChartPie, FaLaptopCode, FaShieldAlt, FaPhoneVolume } from 'react-icons/fa';
 
 import Whatsapp from '../components/Whatsapp';
 
 import styles from '../styles/pages/Home.module.css';
 import 'animate.css';
 import Slide from '../components/Slide';
+import { Footer } from '../components/Footer';
 
 export default function Home() {
 
@@ -113,17 +114,19 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.container}>
-        <div className={styles.wrapper}>
-          <div className={styles.brief}>
-            <img src="/image/logo-color.png" alt="Logo CsCode" />
-            <h2>A base digital para o seu sucesso</h2>
-            <p>Enteda como a CsCODE pode ajudar você preparar seu negócio para a transformação digital.</p>
-
-            <Link href="/contato">SOLICITE UM CONTATO</Link>
-          </div>
+      <div className={styles.section04}>
+        <div className={styles.image}>
+        <img src="/image/notebook.png" alt="Serviços de informática" />
+        </div>
+        <div className={styles.techInfo}>
+          <h1>SOLUÇÕES COMPLETAS DE TI</h1>
+          <h2>TUDO QUE SUA EMPRESA PRECISA</h2>
+          <p>Soluções de ponta a ponta e consultoria especializada.</p>
+          <h3><FaPhoneVolume className="animate__animated animate__slower animate__heartBeat animate__infinite"/>fale conosco.</h3>
         </div>
       </div>
+
+      <Footer />
 
       <Whatsapp />
 

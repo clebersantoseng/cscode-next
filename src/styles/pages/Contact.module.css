@@ -35,6 +35,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.wrapper aside {
+  margin-top: 3rem;
+}
+
 .contatoLeft {
   display: flex;
   flex-direction: column;
