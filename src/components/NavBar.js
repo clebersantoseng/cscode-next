@@ -13,6 +13,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 
+import { NavBarMenu } from './NavBarMenu';
 import { GlobalContext } from '../contexts/GlobalContext';
 
 import styles from '../styles/components/NavBar.module.scss';
@@ -26,6 +27,7 @@ export function NavBar() {
   
 
   return (
+    <>
     <header className={styles.navbarWrapper}>
       <div className={styles.navbarContent}>
         <div className={styles.navbarList}>
@@ -59,52 +61,15 @@ export function NavBar() {
             <img src="/image/logo-cscode.png" alt="CsCODE" className='animate__slideInLeft animate__animated animate__delay'/>
           </Link>
 
-          <button>
+          <button onClick={() => handleMenu(true)}>
             <FaBars />
           </button>
         </div>
       </div>
-
-      
-
-      {/* <div className={styles.navmobile}>
-        <button onClick={() => handleMenu(true)}>
-          <FaBars />
-        </button>        
-      </div>
-
-      <div className={styles.menu} style={{ display: (openMenu ? 'block' : 'none')}}>
-        <button onClick={() => handleMenu(false)}>          
-          <p>CLOSE</p>
-          <FaTimesCircle />
-        </button>
-        
-         <ul>
-            <li>
-             <button onClick={() => handleMenu(false)}>
-              <Link href='/'>HOME</Link>
-             </button>
-            </li>
-
-           <li>
-             <button onClick={() => handleMenu(false)}>
-              <Link href='/#'>SOBRE</Link>
-             </button>
-            </li>
-
-            <li>
-             <button onClick={() => handleMenu(false)}>
-              <Link href='/#'>SERVIÇOS</Link>
-             </button>
-            </li>
-
-            <li>
-             <button onClick={() => handleMenu(false)}>
-              <Link href='/contato'>CONTATO</Link>
-             </button>
-            </li>
-         </ul>
-      </div> */}
+     
     </header>
+
+    <NavBarMenu />
+    </>
   );
 }

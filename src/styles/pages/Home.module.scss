@@ -70,14 +70,12 @@
   color: var(--colors-white);
   width: 768px;
   padding-left: 2rem;
-  position: absolute;
-  bottom: 5rem;
 }
 
 .footer {
-  position: absolute;
-  bottom: 15px;
-  left: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
 
   color: var(--white);
   font-size: 14px;
@@ -149,7 +147,7 @@
 
   .wrapper {
     img {
-      max-width: 250px;
+      max-height: 350px;
     }
   }
 
@@ -171,6 +169,8 @@
   }
 
   .footer {
-    bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
   }
 }

@@ -50,6 +50,13 @@
       }
     }
   }
+
+  @media (max-width: 600px) {
+    ul {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
 }
 
 // NAVBAR LINK MENU
@@ -85,6 +92,7 @@
 
 .navbarMobile {
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,4 +118,8 @@
     display: none;
   }
 }
+
+
+
+
 
