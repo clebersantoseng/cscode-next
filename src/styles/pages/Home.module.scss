@@ -73,9 +73,9 @@
 }
 
 .footer {
-  margin-top: 3rem;
+  margin-top: 7rem;
   margin-bottom: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
 
   color: var(--white);
   font-size: 14px;
@@ -108,6 +108,12 @@
 
   .paragraph {
     bottom: 8rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    margin-top: 4rem;
   }
 }
 
